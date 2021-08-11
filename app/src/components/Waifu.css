@@ -1,0 +1,23 @@
+img {
+    width: 25vw;
+    border: 4px solid #F0F8FF;
+    padding: 0%;
+    margin: 1%;
+}
+
+button {
+    color: brown;
+    border: none;
+    font-family: sans-serif;
+    border-radius: 3px;
+    opacity: 92%;
+    padding: 3%;
+}
+
+h2 {
+    margin: 2.25% 0% 0%;
+    color: #823d8b;
+    font-size: 1.7rem;
+    font-style: italic;
+    opacity: 95%;
+}
