@@ -18,7 +18,7 @@ const ButtonSection = styled.div`
 `
 
 const Waifu = props => {
-    const { url, isFetching, error, getWaifu } = props;
+    const { url, isFetching, error, getWaifu, fetchFail } = props;
 
     useEffect(()=> {
         getWaifu();
