@@ -18,11 +18,11 @@ const ButtonSection = styled.div`
 `
 
 const Waifu = props => {
-    const { url, isFetching, error } = props;
+    const { url, isFetching, error, getWaifu } = props;
 
     useEffect(()=> {
-        props.getWaifu();
-      }, []);
+        getWaifu();
+      }, [getWaifu]);
 
     if (error) {
         return <h2>We got an error: {error}</h2>;
