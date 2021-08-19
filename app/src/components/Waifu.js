@@ -37,7 +37,7 @@ const Waifu = props => {
     }
 
     return (
-        <div>
+        <WaifuSection>
             <h2>Hiya!~</h2>
             <img src={url} alt = "waifu" />
             <ButtonSection>
@@ -46,7 +46,7 @@ const Waifu = props => {
                     fetchFail("Pressed the Error button!!!");
                 }}> Error Button</button>
             </ButtonSection>
-        </div>
+        </WaifuSection>
     )
 }
 
