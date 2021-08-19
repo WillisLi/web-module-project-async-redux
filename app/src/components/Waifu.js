@@ -37,7 +37,7 @@ const Waifu = props => {
     }
 
     return (
-        <div className = "waifuSection">
+        <div>
             <h2>Hiya!~</h2>
             <img src={url} alt = "waifu" />
             <ButtonSection>
