@@ -18,7 +18,7 @@ const ButtonSection = styled.div`
 `
 
 const Waifu = props => {
-    const { url, isFetching, error, getWaifu } = props;
+    const { url, isFetching, error, getWaifu, fetchFail } = props;
 
     useEffect(()=> {
         getWaifu();
@@ -33,7 +33,7 @@ const Waifu = props => {
     }
 
     const handleClick = ()=> {
-        props.getWaifu();
+        getWaifu();
     }
 
     return (
@@ -43,7 +43,7 @@ const Waifu = props => {
             <ButtonSection>
                 <button onClick={handleClick}>Find a new Waifu!</button>
                 <button onClick={()=> {
-                    props.fetchFail("Pressed the Error button!!!");
+                    fetchFail("Pressed the Error button!!!");
                 }}> Error Button</button>
             </ButtonSection>
         </WaifuSection>
